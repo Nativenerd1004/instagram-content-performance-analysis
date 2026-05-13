@@ -2,7 +2,7 @@
 
 End-to-end supervised machine learning pipeline on 29,999 Instagram posts. Uncovers which content formats, categories, and posting strategies drive the highest engagement — giving brands a data-backed content playbook.
 
-**Live App →** [Streamlit Dashboard]([https://share.streamlit.io/nativenerd1004/instagram-content-performance-analysis](https://instagram-content-performance-analysis-fpzh3vjcf9adeqd9kkcvwf.streamlit.app/))  
+**Live App →** [Streamlit Dashboard]([https://share.streamlit.io/nativenerd1004/instagram-content-performance-analysis](https://instagram-content-performance-analysis-fpzh3vjcf9adeqd9kkcvwf.streamlit.app/)
 **Notebook →** [`Instagram_Content_Performance_Model.ipynb`](Instagram_Content_Performance_Model.ipynb)
 
 ---
