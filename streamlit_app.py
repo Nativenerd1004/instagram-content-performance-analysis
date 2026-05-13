@@ -233,7 +233,7 @@ elif page == "🤖 ML Models":
         "accuracy": "Accuracy", "precision": "Precision",
         "recall": "Recall", "f1": "F1-Score", "roc_auc": "AUC-ROC"
     }).sort_values("F1-Score", ascending=False)
-    cls_df = cls_df.applymap(lambda v: f"{v:.4f}")
+    cls_df = cls_df.map(lambda v: f"{v:.4f}")
     st.dataframe(cls_df, use_container_width=True, height=360)
 
     st.divider()
@@ -250,7 +250,7 @@ elif page == "🤖 ML Models":
     st.markdown("## 📈 Regression Results — Predicting Engagement Rate")
     reg_df = pd.DataFrame(REG_SCORES).T.rename(columns={
         "rmse": "RMSE ↓", "mae": "MAE ↓", "r2": "R² ↑"
-    }).applymap(lambda v: f"{v:.4f}")
+    }).map(lambda v: f"{v:.4f}")
     st.dataframe(reg_df, use_container_width=True)
 
     st.divider()
