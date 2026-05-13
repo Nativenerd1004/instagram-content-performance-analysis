@@ -1,0 +1,106 @@
+{
+  "best_regressor": "Ridge Regression",
+  "regression_scores": {
+    "Ridge Regression": {
+      "rmse": 49.72555994213886,
+      "mae": 11.538065439977421,
+      "r2": -0.000627398577843552
+    },
+    "Random Forest Regressor": {
+      "rmse": 50.099842938064164,
+      "mae": 12.861783891973738,
+      "r2": -0.015747482250208833
+    },
+    "Gradient Boosting Reg.": {
+      "rmse": 49.77342905463714,
+      "mae": 11.603092925761143,
+      "r2": -0.002554866101979636
+    }
+  },
+  "insights": {
+    "best_media_type": "Video",
+    "best_category": "Beauty",
+    "best_day": "Wednesday",
+    "best_hour": 9,
+    "best_hashtag_range": "16-20",
+    "best_engagement_rate": 14.619609336164297,
+    "median_engagement_rate": 9.194521547
+  },
+  "encoders": {
+    "media_type": {
+      "Carousel": 0,
+      "Photo": 1,
+      "Reel": 2,
+      "Video": 3
+    },
+    "traffic_source": {
+      "Explore": 0,
+      "External": 1,
+      "Hashtags": 2,
+      "Home Feed": 3,
+      "Profile": 4,
+      "Reels Feed": 5
+    },
+    "content_category": {
+      "Beauty": 0,
+      "Comedy": 1,
+      "Fashion": 2,
+      "Fitness": 3,
+      "Food": 4,
+      "Lifestyle": 5,
+      "Music": 6,
+      "Photography": 7,
+      "Technology": 8,
+      "Travel": 9
+    },
+    "Day name": {
+      "Friday": 0,
+      "Monday": 1,
+      "Saturday": 2,
+      "Sunday": 3,
+      "Thursday": 4,
+      "Tuesday": 5,
+      "Wednesday": 6
+    }
+  },
+  "feature_cols": [
+    "media_type",
+    "caption_length",
+    "hashtags_count",
+    "traffic_source",
+    "content_category",
+    "Hour",
+    "Month",
+    "Day name"
+  ],
+  "category_avg_engagement": {
+    "Beauty": 15.664371361600745,
+    "Comedy": 14.396126508297964,
+    "Fashion": 14.523515812757086,
+    "Fitness": 13.94866151856325,
+    "Food": 13.988692884152158,
+    "Lifestyle": 14.692027249422605,
+    "Music": 14.487999843888778,
+    "Photography": 14.816472098346951,
+    "Technology": 13.927697553144462,
+    "Travel": 13.75770453263814
+  },
+  "media_avg_engagement": {
+    "Carousel": 14.323343026298167,
+    "Photo": 14.191000481588567,
+    "Reel": 14.54053480626467,
+    "Video": 14.619609336164297
+  },
+  "day_avg_engagement": {
+    "Monday": 14.300928077851601,
+    "Tuesday": 13.98046862000069,
+    "Wednesday": 15.106568939633956,
+    "Thursday": 14.154578340652034,
+    "Friday": 14.185129700905879,
+    "Saturday": 14.789099805570052,
+    "Sunday": 14.418650252646849
+  },
+  "hour_avg_engagement": {
+    "9": 14.419247584971965
+  }
+}
