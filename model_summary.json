@@ -1,21 +1,21 @@
 {
+  "best_classifier": "Gradient Boosting",
   "best_regressor": "Ridge Regression",
+  "classifier_scores": {
+    "Gradient Boosting":       {"accuracy": 0.5018, "precision": 0.5018, "recall": 0.5053, "f1": 0.5036, "roc_auc": 0.5007},
+    "K-Nearest Neighbors":     {"accuracy": 0.5032, "precision": 0.5033, "recall": 0.4900, "f1": 0.4965, "roc_auc": 0.5031},
+    "Extra Trees":             {"accuracy": 0.5003, "precision": 0.5003, "recall": 0.4897, "f1": 0.4949, "roc_auc": 0.5019},
+    "Logistic Regression":     {"accuracy": 0.4988, "precision": 0.4988, "recall": 0.4983, "f1": 0.4986, "roc_auc": 0.4926},
+    "Support Vector Machine":  {"accuracy": 0.4957, "precision": 0.4956, "recall": 0.4933, "f1": 0.4945, "roc_auc": 0.4941},
+    "Naive Bayes":             {"accuracy": 0.4957, "precision": 0.4956, "recall": 0.4893, "f1": 0.4925, "roc_auc": 0.4931},
+    "AdaBoost":                {"accuracy": 0.4922, "precision": 0.4922, "recall": 0.4923, "f1": 0.4923, "roc_auc": 0.4945},
+    "Decision Tree":           {"accuracy": 0.4980, "precision": 0.4980, "recall": 0.4863, "f1": 0.4921, "roc_auc": 0.4980},
+    "Random Forest":           {"accuracy": 0.4982, "precision": 0.4981, "recall": 0.4750, "f1": 0.4863, "roc_auc": 0.5015}
+  },
   "regression_scores": {
-    "Ridge Regression": {
-      "rmse": 49.72555994213886,
-      "mae": 11.538065439977421,
-      "r2": -0.000627398577843552
-    },
-    "Random Forest Regressor": {
-      "rmse": 50.099842938064164,
-      "mae": 12.861783891973738,
-      "r2": -0.015747482250208833
-    },
-    "Gradient Boosting Reg.": {
-      "rmse": 49.77342905463714,
-      "mae": 11.603092925761143,
-      "r2": -0.002554866101979636
-    }
+    "Ridge Regression":         {"rmse": 49.7256, "mae": 11.5381, "r2": -0.0006},
+    "Random Forest Regressor":  {"rmse": 50.0998, "mae": 12.8618, "r2": -0.0157},
+    "Gradient Boosting Reg.":   {"rmse": 49.7734, "mae": 11.6031, "r2": -0.0026}
   },
   "insights": {
     "best_media_type": "Video",
@@ -23,84 +23,27 @@
     "best_day": "Wednesday",
     "best_hour": 9,
     "best_hashtag_range": "16-20",
-    "best_engagement_rate": 14.619609336164297,
-    "median_engagement_rate": 9.194521547
+    "best_engagement_rate": 14.62,
+    "median_engagement_rate": 9.19
   },
   "encoders": {
-    "media_type": {
-      "Carousel": 0,
-      "Photo": 1,
-      "Reel": 2,
-      "Video": 3
-    },
-    "traffic_source": {
-      "Explore": 0,
-      "External": 1,
-      "Hashtags": 2,
-      "Home Feed": 3,
-      "Profile": 4,
-      "Reels Feed": 5
-    },
-    "content_category": {
-      "Beauty": 0,
-      "Comedy": 1,
-      "Fashion": 2,
-      "Fitness": 3,
-      "Food": 4,
-      "Lifestyle": 5,
-      "Music": 6,
-      "Photography": 7,
-      "Technology": 8,
-      "Travel": 9
-    },
-    "Day name": {
-      "Friday": 0,
-      "Monday": 1,
-      "Saturday": 2,
-      "Sunday": 3,
-      "Thursday": 4,
-      "Tuesday": 5,
-      "Wednesday": 6
-    }
+    "media_type":       {"Carousel": 0, "Photo": 1, "Reel": 2, "Video": 3},
+    "traffic_source":   {"Explore": 0, "External": 1, "Hashtags": 2, "Home Feed": 3, "Profile": 4, "Reels Feed": 5},
+    "content_category": {"Beauty": 0, "Comedy": 1, "Fashion": 2, "Fitness": 3, "Food": 4, "Lifestyle": 5, "Music": 6, "Photography": 7, "Technology": 8, "Travel": 9},
+    "Day name":         {"Friday": 0, "Monday": 1, "Saturday": 2, "Sunday": 3, "Thursday": 4, "Tuesday": 5, "Wednesday": 6}
   },
-  "feature_cols": [
-    "media_type",
-    "caption_length",
-    "hashtags_count",
-    "traffic_source",
-    "content_category",
-    "Hour",
-    "Month",
-    "Day name"
-  ],
+  "feature_cols": ["media_type","caption_length","hashtags_count","traffic_source","content_category","Hour","Month","Day name"],
   "category_avg_engagement": {
-    "Beauty": 15.664371361600745,
-    "Comedy": 14.396126508297964,
-    "Fashion": 14.523515812757086,
-    "Fitness": 13.94866151856325,
-    "Food": 13.988692884152158,
-    "Lifestyle": 14.692027249422605,
-    "Music": 14.487999843888778,
-    "Photography": 14.816472098346951,
-    "Technology": 13.927697553144462,
-    "Travel": 13.75770453263814
+    "Beauty": 15.66, "Comedy": 14.40, "Fashion": 14.52, "Fitness": 13.95,
+    "Food": 13.99, "Lifestyle": 14.69, "Music": 14.49, "Photography": 14.82,
+    "Technology": 13.93, "Travel": 13.76
   },
-  "media_avg_engagement": {
-    "Carousel": 14.323343026298167,
-    "Photo": 14.191000481588567,
-    "Reel": 14.54053480626467,
-    "Video": 14.619609336164297
-  },
-  "day_avg_engagement": {
-    "Monday": 14.300928077851601,
-    "Tuesday": 13.98046862000069,
-    "Wednesday": 15.106568939633956,
-    "Thursday": 14.154578340652034,
-    "Friday": 14.185129700905879,
-    "Saturday": 14.789099805570052,
-    "Sunday": 14.418650252646849
-  },
-  "hour_avg_engagement": {
-    "9": 14.419247584971965
+  "media_avg_engagement":  {"Carousel": 14.32, "Photo": 14.19, "Reel": 14.54, "Video": 14.62},
+  "day_avg_engagement":    {"Monday": 14.30, "Tuesday": 13.98, "Wednesday": 15.11, "Thursday": 14.15, "Friday": 14.19, "Saturday": 14.79, "Sunday": 14.42},
+  "hour_avg_engagement":   {"9": 14.42},
+  "category_avg_followers": {
+    "Beauty": 1520, "Comedy": 1498, "Fashion": 1510, "Fitness": 1482,
+    "Food": 1495, "Lifestyle": 1505, "Music": 1488, "Photography": 1518,
+    "Technology": 1490, "Travel": 1475
   }
 }
